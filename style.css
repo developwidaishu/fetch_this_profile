@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    font-family: 'Bodoni Moda', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 50px;
+    background-color: #dcd9df;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%230da2e5' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+}
+
+.user-form{
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.user-form input{
+    width: 100%;
+    display: block;
+    background-color: rgba(131, 101, 101, 0.2);
+    border: none;
+    border-radius: 15px;
+    color: black;
+    padding: 1rem;
+    margin: 20px;
+    box-shadow: 5px 10px 18px #2a292b;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+
+
+.user-info{
+    position: relative;
+    display: block;
+    
+    margin: 20px;
+    background-color: rgba(131, 101, 101, 0.2);
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #2a292b;
+    font-weight: 900;
+
+}
+
+.user-info h2{
+    margin-top: 0;
+}
+
+.user-info ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+
+}
+
+.user-info ul li{
+    display: flex;
+    align-items: center;
+
+}
+
+.user-info ul li strong{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+
+}
+.user-form input::placeholder{
+    color: #333333;
+}
+.user-form input:focus{
+    outline: none;
+}
+
+.card{
+    max-width: 1000px;
+   
+    
+
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 2px solid rgba(37, 36, 36, 0.6);
+    box-shadow: 5px 10px 8px #2a292b ;
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.repo{
+    
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgb(46, 44, 44);
+    color:#ccc;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media(max-width: 500px){
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .user-form{
+        position: relative;
+        margin-top: 70px;
+        max-width: 400px;
+    }
+
+    body>h1{
+        display: none;
+    }
+
+
+}
+
+.fa-github{
+    max-height: 150px;
+}
