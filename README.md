@@ -1,4 +1,4 @@
-# githiub_profile_fetcher
+# Github Profile Fetcher
 
 A simple responsive web application which makes use of the github api and 
 fetches the profile information like the number of followers, following and the number of public repositories.
